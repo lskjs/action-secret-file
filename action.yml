@@ -1,0 +1,23 @@
+name: Github Secret to Env File
+description: Github Secret to Env File without base64
+author: Igor Suvorov
+branding:
+  icon: 'check-circle'
+  color: 'orange'
+
+inputs:
+  content:
+    description: Content for the file
+    required: true
+  filename:
+    description: Name of the file for the content (allow directory)
+    required: true
+  chmod:
+    description: Defines the file CHMOD permission of the created file
+    required: false 
+    default: '644'
+
+runs:
+  using: node20
+  main: main.js
+  post: post.js

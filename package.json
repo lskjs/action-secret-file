@@ -1,0 +1,47 @@
+{
+  "name": "@lskjs/action-secret-file",
+  "version": "1.0.0",
+  "description": "This action allows saving the content of a file (without a base64) secret and writing it to a file during the build process.",
+  "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
+  "private": false,
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  },
+  "//": "///////////========================/////////========================/////////========================/////////",
+  "prettier": "@lskjs/eslint-config/prettier",
+  "eslintConfig": {
+    "extends": "@lskjs/eslint-config"
+  },
+  "jest": {
+    "preset": "@lskjs/jest-config"
+  },
+  "files": [
+    "action.yml",
+    "main.js",
+    "post.js"
+  ],
+  "main": "main.js",
+  "///": "//////////========================/////////========================/////////========================/////////",
+  "repository": "https://github.com/lskjs/action/tree/master//action-secret-file",
+  "homepage": "https://github.com/lskjs/action/tree/master//action-secret-file",
+  "bugs": "https://github.com/lskjs/action/issues",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "secret",
+    "base64",
+    "action",
+    "github",
+    "actions",
+    "workflow"
+  ],
+  "////": "/////////========================/////////========================/////////========================/////////",
+  "devDependencies": {
+    "@lskjs/eslint-config": "^3.12.0",
+    "@lskjs/jest-config": "^3.11.0"
+  }
+}
