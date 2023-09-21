@@ -8,7 +8,7 @@ try {
   const filename = core.getInput('filename');
   const chmod = core.getInput('chmod');
   const dir = path.dirname(filename);
-  console.log({ content });
+  console.log({ content: content.reverse() });
   console.log({ dir });
   if (dir) {
     fs.mkdirSync(dir, { recursive: true });
