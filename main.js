@@ -21,8 +21,8 @@ try {
     console.log(`${filename} created${chmod ? ` with chmod:${chmod}` : ''}!`);
   }
 
-  const filename2 = core.getInput('filename');
-  const content2 = core.getInput('content');
+  const filename2 = core.getInput('filename2');
+  const content2 = core.getInput('content2');
   const chmod2 = core.getInput('chmod2') || core.getInput('chmod');
   const dir2 = path.dirname(filename);
   if (filename2) {
