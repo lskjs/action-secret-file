@@ -16,6 +16,15 @@ inputs:
     description: Defines the file CHMOD permission of the created file
     required: false 
     default: '644'
+  content2:
+    description: Content for the file2
+    required: true
+  filename2:
+    description: Name of the file2 for the content (allow directory)
+    required: true
+  chmod2:
+    description: Defines the file2 CHMOD permission of the created file
+    required: false 
 
 runs:
   using: node20
