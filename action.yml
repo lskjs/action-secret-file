@@ -18,10 +18,10 @@ inputs:
     default: '644'
   content2:
     description: Content for the file2
-    required: true
+    required: false
   filename2:
     description: Name of the file2 for the content (allow directory)
-    required: true
+    required: false
   chmod2:
     description: Defines the file2 CHMOD permission of the created file
     required: false 
